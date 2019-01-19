@@ -67,6 +67,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="gWA-Hg-0H8"/>
+                                    <segue destination="um7-dp-4fY" kind="push" id="fIU-lP-7IH"/>
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter your bill" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="sfV-Lw-0dM">
@@ -86,7 +87,13 @@
                             <outletCollection property="gestureRecognizers" destination="qWR-N7-qbC" appends="YES" id="XdF-1K-1Vy"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="TipCalculator" id="cxK-qM-e9D"/>
+                    <navigationItem key="navigationItem" title="TipCalculator" id="cxK-qM-e9D">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="dak-Xr-pXq">
+                            <connections>
+                                <segue destination="um7-dp-4fY" kind="push" id="b0k-nV-dcX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="sfV-Lw-0dM" id="jeM-xk-gZV"/>
                         <outlet property="tipControl" destination="KOl-0j-Te1" id="F5M-Fg-S4D"/>
@@ -102,6 +109,71 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="688.79999999999995" y="5.8470764617691158"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E4e-1k-GtV">
+            <objects>
+                <viewController id="um7-dp-4fY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wfh-AD-cbr" customClass="SettingViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="awo-DU-ejC">
+                                <rect key="frame" x="36" y="151" width="302" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1%"/>
+                                    <segment title="5%"/>
+                                    <segment title="10%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="8VO-p4-0cc"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Puf-go-uCO">
+                                <rect key="frame" x="36" y="326" width="302" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                    <segment title="30%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fsy-QS-hLo"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="eF7-WR-vMd">
+                                <rect key="frame" x="36" y="419" width="302" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="30%"/>
+                                    <segment title="40%"/>
+                                    <segment title="50%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="nJ7-eA-7lr"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Iaq-eT-Pp6">
+                                <rect key="frame" x="36" y="242" width="302" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="ETA-kj-tIv"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JlH-JH-aXu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Im7-o5-nhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321" y="6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lie-rs-Wis">
@@ -122,4 +194,7 @@
             <point key="canvasLocation" x="-157.59999999999999" y="5.8470764617691158"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="b0k-nV-dcX"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0512AC5921F26B730038CEAB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0512AC5821F26B730038CEAB /* SettingsViewController.swift */; };
 		05A7B3DC21E165D80062F262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A7B3DB21E165D80062F262 /* AppDelegate.swift */; };
 		05A7B3DE21E165D80062F262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A7B3DD21E165D80062F262 /* ViewController.swift */; };
 		05A7B3E121E165D80062F262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A7B3DF21E165D80062F262 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0512AC5821F26B730038CEAB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		05A7B3D821E165D80062F262 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A7B3DB21E165D80062F262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05A7B3DD21E165D80062F262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				05A7B3DB21E165D80062F262 /* AppDelegate.swift */,
 				05A7B3DD21E165D80062F262 /* ViewController.swift */,
 				05A7B3DF21E165D80062F262 /* Main.storyboard */,
+				0512AC5821F26B730038CEAB /* SettingsViewController.swift */,
 				05A7B3E221E165DB0062F262 /* Assets.xcassets */,
 				05A7B3E421E165DB0062F262 /* LaunchScreen.storyboard */,
 				05A7B3E721E165DB0062F262 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				05A7B3DE21E165D80062F262 /* ViewController.swift in Sources */,
 				05A7B3DC21E165D80062F262 /* AppDelegate.swift in Sources */,
+				0512AC5921F26B730038CEAB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
