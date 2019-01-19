@@ -67,7 +67,6 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="gWA-Hg-0H8"/>
-                                    <segue destination="um7-dp-4fY" kind="push" id="fIU-lP-7IH"/>
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter your bill" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="sfV-Lw-0dM">
@@ -126,9 +125,6 @@
                                     <segment title="5%"/>
                                     <segment title="10%"/>
                                 </segments>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="8VO-p4-0cc"/>
-                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Puf-go-uCO">
                                 <rect key="frame" x="36" y="326" width="302" height="29"/>
@@ -138,9 +134,6 @@
                                     <segment title="25%"/>
                                     <segment title="30%"/>
                                 </segments>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fsy-QS-hLo"/>
-                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="eF7-WR-vMd">
                                 <rect key="frame" x="36" y="419" width="302" height="29"/>
@@ -150,9 +143,6 @@
                                     <segment title="40%"/>
                                     <segment title="50%"/>
                                 </segments>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="nJ7-eA-7lr"/>
-                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Iaq-eT-Pp6">
                                 <rect key="frame" x="36" y="242" width="302" height="29"/>
@@ -162,9 +152,6 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                 </segments>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="ETA-kj-tIv"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -194,7 +181,4 @@
             <point key="canvasLocation" x="-157.59999999999999" y="5.8470764617691158"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="b0k-nV-dcX"/>
-    </inferredMetricsTieBreakers>
 </document>
